@@ -1,0 +1,12 @@
+:root{
+    /* h1 */
+    --primary-color: #2F1C7C;
+    /* p */
+    --secondary-color: #7D1C7C;
+    /* a */
+    --tertiary-color: #673DE6;
+    /* span */
+    --quarternary-color: #6B3DE6;
+    /* background bottom */
+    --background-bottom: #F4F5FF;
+}
