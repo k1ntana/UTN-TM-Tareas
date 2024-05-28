@@ -1,0 +1,244 @@
+@import url(./normalize.css);
+@import url(./variables.css);
+@import url(./font.css);
+@import url(./style.css);
+
+/* header */
+
+
+
+header .button-ingresar{
+    display: none;
+}
+
+header nav{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 15px;
+    width: 100vw;
+    height: 79px;
+}
+
+.image-logo img{
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    
+}
+
+
+
+header .button-menu img{
+    color: black;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+header .button-menu {
+    border: transparent;
+    background-color: transparent;
+}
+
+
+
+
+/* lista */
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+    ;
+}
+
+
+
+.lista li{
+    display: flex;
+    gap: 5px;
+}
+
+/* img seccion cabecera */
+
+.seccion .seccion-cabecera .img-container{
+    width: 100%;
+}
+
+.seccion .seccion-cabecera .img-container img{
+    width: 100%;
+}
+
+/* SECCIONES */
+
+/* seccion secundaria */
+
+.primary{
+    padding: 64px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.primary .seccion-cabecera{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+}
+
+.seccion-cabecera .seccion-contenedor h2{
+    margin: 0 0 24px;
+}
+
+
+
+/* reseñas */
+
+.primary .reseñas-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 16px;
+    max-width: 650px;
+    width: 100%;
+}
+
+.reseñas-contenedor .caja-reseña{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    gap: 15px;
+    padding: 32px;
+    width: 100%;
+    height: 289px;
+    background-color: var(--secondary-color);
+}
+
+.reseñas-contenedor .caja-reseña a{
+    display: flex;
+    justify-content: end;
+}
+
+.caja-reseña img{
+    width: 205px;
+}
+
+
+
+
+@media screen and (min-width: 650px){
+    .primary .seccion-cabecera{
+        max-width: 80%;
+    }
+    
+    .primary .reseñas-contenedor{
+        max-width: 80%;
+        
+    }
+
+    .reseñas-contenedor .caja-reseña{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    
+    header .button-menu{
+        display: none
+    }
+
+
+    header nav{
+        display: flex;
+    }
+
+    header nav ul li{
+        padding-top: 10px;
+    }
+
+    header .button-ingresar{
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        width: 100px;
+        height: 48px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 12px 16px;
+    }
+
+    header nav ul li a{
+        color: black;
+    }
+
+    .image-logo img{
+        width: 148px;
+        height: 30px;
+        
+    }
+
+    header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    }
+
+    .image-logo{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .primary .seccion-cabecera{
+        max-width: 1050px;
+    }
+
+    .primary .reseñas-contenedor{
+        max-width: 1050px;
+    }
+
+}
+
+@media screen and (min-width: 1600px){
+    .primary .seccion-cabecera{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 32px;
+        width: 100vw;
+        
+    }
+
+    .primary .reseñas-contenedor{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .reseñas-contenedor .caja-reseña{
+        width: 30%;
+        height: 265px;
+        
+    }
+
+    .caja-reseña img{
+        width: 180px;
+    }
+
+    .subtitulo-secondary{
+        font-size: 1.9rem;
+    }
+}
+
